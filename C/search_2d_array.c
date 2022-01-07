@@ -6,9 +6,9 @@ void search2DArray(char key, char array[4][4], int rows, int colums, int *x, int
 {
     int i, j;
 
-    for (i = 0; i < colums; i++)
+    for(i = 0; i < colums; i++)
     {
-        for (j = 0; j < rows; j++)
+        for(j = 0; j < rows; j++)
         {
             if (array[i][j] == key)
             {
@@ -22,14 +22,15 @@ void search2DArray(char key, char array[4][4], int rows, int colums, int *x, int
 
 int main()
 {
-    // Rows
-    // 0    1    2    3        // Columns
-    char map[4][4] = {{'1', '1', '1', '1'},  // 0
-                      {'1', '1', 'E', '1'},  // 1
-                      {'1', 'P', '1', '1'},  // 2
-                      {'1', '1', '1', '1'}}; // 3
+                     // Rows
+                     // 0    1    2    3        // Columns
+    char map[4][4] = {{'1', '1', '1', '1'},     // 0
+                      {'1', '1', 'E', '1'},     // 1
+                      {'1', 'P', '1', '1'},     // 2
+                      {'1', '1', '1', '1'}};    // 3
 
     int x, y;
+
 
     search2DArray('P', map, 4, 4, &x, &y);
 
